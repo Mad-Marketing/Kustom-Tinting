@@ -3,7 +3,7 @@ body {
   padding: 0;
 }
 
-$main-red: rgb(0, 162, 213);
+$main-red: rgb(101, 0, 213);
 
 .navbar {
   z-index: 10;
@@ -292,7 +292,7 @@ $product-card-border-radius: 15px;
 
   .product-card {
     margin: 0 30px;
-    background: linear-gradient(-45deg, rgb(67, 142, 163), #000305);
+    background: linear-gradient(-45deg, $main-red, #000305);
     width: 300px;
     min-height: 575px;
 
@@ -338,7 +338,7 @@ $product-card-border-radius: 15px;
       transition-delay: 100ms;
       position: relative;
       padding: 15px 25px;
-      background: linear-gradient(-45deg, #167ea6, #253439);
+      background: linear-gradient(-45deg, lighten($main-red, 10%), #253439);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -370,7 +370,7 @@ $product-card-border-radius: 15px;
           position: absolute;
           left: 0;
           top: 1.8em;
-          background-color: #2c94c1;
+          background-color: $main-red;
           width: 64px;
           height: 4px;
           transform: skewX(-30deg);

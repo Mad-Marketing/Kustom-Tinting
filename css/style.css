@@ -15,7 +15,7 @@ body {
       transition: 300ms cubic-bezier(0.75, 0, 0.25, 1);
       position: absolute;
       content: '';
-      background-color: #00a2d5;
+      background-color: #6500d5;
       transform: skewX(-30deg);
       width: 0%;
       left: 10%;
@@ -98,7 +98,7 @@ body {
     display: inline-block;
     width: 20px;
     height: 12px;
-    background-color: #00a2d5; }
+    background-color: #6500d5; }
     .title-underline div:first-child {
       width: 100px; }
 
@@ -109,7 +109,7 @@ body {
     display: inline-block;
     width: 20px;
     height: 12px;
-    background-color: #00a2d5; }
+    background-color: #6500d5; }
     .title-underline-alt div:last-child {
       width: 100px; }
 
@@ -125,18 +125,18 @@ body {
   padding: 25px;
   text-align: left; }
   .list-item .number {
-    border: 3px solid #00a2d5;
+    border: 3px solid #6500d5;
     height: 56px;
     padding: 0 22px 4px;
     transform: skewX(-30deg); }
     .list-item .number h3 {
       transform: skewX(30deg);
-      color: #00a2d5; }
+      color: #6500d5; }
   .list-item .content {
     margin-left: 24px; }
     .list-item .content h2 {
       text-align: left;
-      color: #008fbc;
+      color: #5900bc;
       font-size: 30px;
       margin: 0; }
     .list-item .content p {
@@ -156,7 +156,7 @@ body {
       width: 6px;
       height: 6px;
       transform: rotate(45deg);
-      background-color: #00a2d5; }
+      background-color: #6500d5; }
 
 .list-left {
   padding: 0;
@@ -173,7 +173,7 @@ body {
       width: 6px;
       height: 6px;
       transform: rotate(45deg);
-      background-color: #00a2d5; }
+      background-color: #6500d5; }
 
 .section:hover .title-underline div {
   width: 5px; }
@@ -192,7 +192,7 @@ body {
   padding: 25px 0; }
   .product-module .product-card {
     margin: 0 30px;
-    background: linear-gradient(-45deg, #438ea3, #000305);
+    background: linear-gradient(-45deg, #6500d5, #000305);
     width: 300px;
     min-height: 575px; }
     .product-module .product-card:nth-child(1) {
@@ -217,7 +217,7 @@ body {
       transition-delay: 100ms;
       position: relative;
       padding: 15px 25px;
-      background: linear-gradient(-45deg, #167ea6, #253439);
+      background: linear-gradient(-45deg, #7e09ff, #253439);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -243,7 +243,7 @@ body {
           position: absolute;
           left: 0;
           top: 1.8em;
-          background-color: #2c94c1;
+          background-color: #6500d5;
           width: 64px;
           height: 4px;
           transform: skewX(-30deg); }
@@ -407,7 +407,7 @@ body {
       position: absolute;
       bottom: -10px;
       left: 0;
-      background-color: #00a2d5;
+      background-color: #6500d5;
       height: 4px; }
   .footer ul {
     margin: 0;
