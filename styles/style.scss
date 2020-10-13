@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
+
+$blue: #4A30D0;
+$blue-opacity: 0.5;
+$grey: #323638;
+$light-grey: #9BA0A3;
+$light-blue: #7156ff;
+
+body {
+    background-color: white;
+}
+
+* {
+    font-family: 'Cabin', sans-serif !important;
+}
+
+h1 {
+    font-size: 4em !important;
+}
+
+h2 {
+    font-size: 3em !important;
+}
+
+.header {
+    background-color: black;
+    height: 80vh;
+    display: flex;
+    background-image: url('../img/cover.png');
+    background-size: cover;
+    background-position: center center;
+
+    .caption {
+
+        h1 {
+            color: white;
+            font-size: 4vw;
+            line-height: 1em;
+            margin-bottom: 48px;
+        }
+
+        p {
+            color: white;
+        }
+    }
+}
+
+.btn-primary {
+    font-family: 'Poppins' !important;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 14px !important;
+    padding: 20px 35px !important;
+    background-color: $blue !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-secondary {
+    font-family: 'Poppins' !important;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 14px !important;
+    padding: 20px 35px !important;
+    background-color: white !important;
+    color: $grey !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-btn {
+    font-size: 16px;
+    font-weight: 700;
+    color: white !important;
+}
+
+.badge-kustom {
+    letter-spacing: 5px;
+    font-weight: 900 !important;
+    font-size: 14px !important;
+    color: $light-grey !important;
+}
+
+
+.thumbnail {
+    background-color: $blue;
+    padding-bottom: 1px;
+    transform: translateY(50%);
+}
+
+.text-btn {
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.icon-badge {
+    display: flex;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.15);
+    margin-right: 25px;
+    border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+
+    &.check {
+        padding: 6px;
+        background-color: $blue !important;
+    }
+}
+
+.dot-points {
+    display: block;
+
+    & > div {
+        padding: 8px 0;
+        display: flex;
+        align-items: center;
+
+        .icon-badge {
+            color:white;
+        }
+    }
+}
+
+.problem-info {
+
+    .problem-icon {
+        text-align: center;
+        padding: 10px !important;
+
+        p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+}
+
+.contact-info {
+    padding: 50px 0;
+
+    .first-image {
+        background: url('../img/gallery/ambient1.jpg');
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .second-image {
+        background: url('../img/gallery/ambient2.jpg');
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .contact-pane {
+        padding: 100px 50px;
+    }
+}
+
+.services {
+    transform: translateY(30%);
+
+    .cars {
+        padding: 50px;
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/gallery/car.jpg');
+        background-position: center center;
+        background-size: cover;
+        color: white !important;
+
+        h3 {
+            font-size: 4em;
+            color: white !important;
+        }
+    }
+
+    .houses {
+        padding: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/gallery/8.jpg');
+        background-position: center center;
+        background-size: cover;
+        color: white !important;
+
+        h3 {
+            text-align: center;
+            flex-basis: 100%;
+            font-size: 4em;
+            color: white !important;
+        }
+    }
+
+    .commercial {
+        padding: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-end;
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/gallery/commercial.jpg');
+        background-position: center center;
+        background-size: cover;
+        color: white !important;
+
+        h3 {
+            text-align: right;
+            flex-basis: 100%;
+            font-size: 4em;
+            color: white !important;
+        }
+    }
+}
+
+.footer {
+    background-color: $blue;
+    padding: 150px 0 125px;
+}
+
+.social-btn {
+    padding: 8px !important;
+    display: inline-flex;
+    width: 42px;
+    height: 42px;
+    min-width: 0 !important;
+    align-items: center;
+    justify-content: center;
+    border-radius: 32px !important;
+}
+
+@media screen and (max-width: 1001px) {
+    .services {
+        transform: translateY(0) !important;
+    }
+    .header {
+        height: auto !important;
+    }
+}
+
+@media screen and (max-width: 1351px) {
+    .thumbnail {
+        transform: translateY(0) !important;
+    }
+}
