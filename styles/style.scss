@@ -155,7 +155,7 @@ h2 {
     }
 
     .contact-pane {
-        padding: 100px 50px;
+        padding: 45px 20px;
     }
 }
 
@@ -166,11 +166,17 @@ h2 {
         padding: 50px;
         background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/gallery/car.jpg');
         background-position: center center;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
         background-size: cover;
         color: white !important;
 
         h3 {
-            font-size: 4em;
+            text-align: center;
+            flex-basis: 100%;
+            font-size: 3em;
             color: white !important;
         }
     }
@@ -189,7 +195,7 @@ h2 {
         h3 {
             text-align: center;
             flex-basis: 100%;
-            font-size: 4em;
+            font-size: 3em;
             color: white !important;
         }
     }
@@ -199,16 +205,16 @@ h2 {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        justify-content: flex-end;
+        justify-content: center;
         background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/gallery/commercial.jpg');
         background-position: center center;
         background-size: cover;
         color: white !important;
 
         h3 {
-            text-align: right;
+            text-align: center;
             flex-basis: 100%;
-            font-size: 4em;
+            font-size: 3em;
             color: white !important;
         }
     }
@@ -229,14 +235,76 @@ h2 {
     justify-content: center;
     border-radius: 32px !important;
 }
+.heroo-btn {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 25px;
+}
+.contact-btnn {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 55px;
+}
 
 @media screen and (max-width: 1001px) {
     .services {
         transform: translateY(0) !important;
+            
     }
     .header {
         height: auto !important;
     }
+}
+@media screen and (max-width: 900px) {
+    .services .col-lg-4 {
+        max-width: 100% !important;
+        position: relative;
+        bottom: -100px;
+
+    }
+    .contact-btnn {
+        margin-top: 20px !important;
+    }
+    .about-us {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .heroo-btn {
+        display: block !important;
+        max-width: 100% !important;
+        margin-left: 0;
+        margin-top: 15px !important
+    }
+    .font-mob {
+        font-size: 35px !important;
+    }
+    .foot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .kustom-badge {
+        display: none !important;
+    }
+    .state {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .adjust {
+        margin-right: 5px;
+    }
+    .problem-icon {
+        flex-basis: 50% !important;
+        width: 50% !important;
+
+        .icon {
+            height: 45px;
+        }
+    }
+    
 }
 
 @media screen and (max-width: 1351px) {
