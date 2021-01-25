@@ -435,6 +435,11 @@ p {
 @media screen and (max-width: 1701px) {
   .car-size-row {
     flex-wrap: wrap !important; } }
+.restart {
+  color: #9BA0A3 !important;
+  background-color: white !important;
+  box-shadow: rgba(74, 48, 208, 0.1) 0px 0px 40px -10px !important; }
+
 .restart-large {
   float: right; }
 
