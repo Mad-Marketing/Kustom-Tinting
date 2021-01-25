@@ -115,13 +115,13 @@ h2 {
 .dot-points {
     display: block;
 
-    & > div {
+    &>div {
         padding: 8px 0;
         display: flex;
         align-items: center;
 
         .icon-badge {
-            color:white;
+            color: white;
         }
     }
 }
@@ -164,7 +164,7 @@ h2 {
 
     .cars {
         padding: 50px;
-        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/gallery/car.jpg');
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/gallery/car.jpg');
         background-position: center center;
         display: flex;
         flex-wrap: wrap;
@@ -187,7 +187,7 @@ h2 {
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
-        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/gallery/8.jpg');
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/gallery/8.jpg');
         background-position: center center;
         background-size: cover;
         color: white !important;
@@ -206,7 +206,7 @@ h2 {
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
-        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/gallery/commercial.jpg');
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/gallery/commercial.jpg');
         background-position: center center;
         background-size: cover;
         color: white !important;
@@ -235,11 +235,13 @@ h2 {
     justify-content: center;
     border-radius: 32px !important;
 }
+
 .heroo-btn {
     display: flex;
     align-items: flex-end;
     margin-left: 25px;
 }
+
 .contact-btnn {
     display: flex;
     align-items: flex-end;
@@ -249,12 +251,14 @@ h2 {
 @media screen and (max-width: 1001px) {
     .services {
         transform: translateY(0) !important;
-            
+
     }
+
     .header {
         height: auto !important;
     }
 }
+
 @media screen and (max-width: 900px) {
     .services .col-lg-4 {
         max-width: 100% !important;
@@ -262,40 +266,49 @@ h2 {
         bottom: -100px;
 
     }
+
     .contact-btnn {
         margin-top: 20px !important;
     }
+
     .about-us {
         padding-left: 10px;
         padding-right: 10px;
     }
+
     .heroo-btn {
         display: block !important;
         max-width: 100% !important;
         margin-left: 0;
         margin-top: 15px !important
     }
+
     .font-mob {
         font-size: 35px !important;
     }
+
     .foot {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
+
     .kustom-badge {
         display: none !important;
     }
+
     .state {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
+
     .adjust {
         margin-right: 5px;
     }
+
     .problem-icon {
         flex-basis: 50% !important;
         width: 50% !important;
@@ -304,7 +317,7 @@ h2 {
             height: 45px;
         }
     }
-    
+
 }
 
 @media screen and (max-width: 1351px) {
@@ -312,3 +325,326 @@ h2 {
         transform: translateY(0) !important;
     }
 }
+
+.pricing-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    z-index: 4;
+    margin: 25px 25px;
+    padding: 25px 25px;
+    box-shadow: rgba(74, 48, 208, .1) 0px 0px 40px -10px;
+}
+
+.pricing-card:hover .card-color {
+    height: 100%;
+}
+
+p {
+    transition: 300ms;
+}
+
+.pricing-card:hover p {
+    color: white;
+}
+
+.card-color {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: #4A30D0;
+    min-width: 100%;
+    height: 30%;
+    z-index: 3;
+    transition: 400ms;
+}
+
+.car-size-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    margin: 25px 25px;
+    box-shadow: rgba(74, 48, 208, .1) 0px 0px 40px -10px;
+}
+
+.card-color-size {
+    background-color: #4A30D0;
+    position: relative;
+    padding: 0 25px;
+    margin: 0 25px;
+    min-width: 100%;
+    height: 30%;
+    z-index: 3;
+    transition: 400ms;
+}
+
+.car-size-card:hover .card-color-size {
+    height: 100%;
+    position: absolute;
+}
+
+.car-size-card:hover .car-icons {
+    filter: invert(100%);
+}
+
+.card-font-heading {
+    font-size: 24px;
+    z-index: 4;
+}
+
+.card-font-heading-car {
+    color: white;
+    font-size: 24px;
+    z-index: 4;
+    position: absolute;
+    bottom: 18px;
+}
+
+.car-size-card:hover .card-font-heading-car {
+    position: absolute;
+    bottom: 18px;
+}
+
+.selection {
+    font-size: 14px;
+}
+
+.estimated-price {
+    z-index: 4;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+}
+
+.car-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    width: 400px;
+    min-height: 400px;
+    padding: 25px 25px;
+}
+
+.car-icons {
+    width: 84px;
+    height: 84px;
+    z-index: 4;
+    position: absolute;
+    top: 95px;
+    transition: 300ms;
+}
+
+.car-icons-film {
+    width: 84px;
+    height: 84px;
+    z-index: 4;
+    position: absolute;
+    top: -45px;
+
+}
+
+
+
+.car-size-row {
+    flex-wrap: nowrap !important;
+    justify-content: center;
+}
+
+.btn-pricing {
+    font-family: 'Poppins' !important;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 14px !important;
+    padding: 20px 35px !important;
+    background-color: #6c57d1 !important;
+    display: flex;
+    align-items: center;
+    color: white !important;
+    letter-spacing: 2px !important;
+    justify-content: center;
+    margin-bottom: 12px !important;
+}
+
+.btn-pricing:hover {
+    background-color: #4A30D0 !important;
+    color: white !important;
+}
+
+.film-size-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    padding: 5px 55px;
+    margin: 25px 25px;
+    box-shadow: rgba(74, 48, 208, .1) 0px 0px 40px -10px;
+}
+
+.card-font-heading-film {
+    color: #3C4144;
+    font-size: 38px;
+    text-align: center;
+    line-height: 47px;
+    z-index: 4;
+    margin-bottom: 0px;
+}
+
+.total-price,
+.removal-text {
+    font-size: 48px;
+}
+
+.final-price-tile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.info-card {
+    color: #9BA0A3;
+}
+
+.est {
+    color: #3C4144;
+    font-size: 14px;
+    line-height: 0px;
+    z-index: 4;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.price-message {
+    color: #9BA0A3;
+    font-size: 14px;
+    margin: 0 0;
+}
+
+
+.tinting-options,
+.removal-options {
+    display: none;
+}
+
+.active {
+    display: block;
+    transition: 200ms;
+    animation: fade-in 1000ms;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.pricing-heading {
+    font-size: 3em !important;
+    margin-bottom: 20px;
+    padding-left: 14px;
+}
+
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+
+@media screen and (max-width: 1701px) {
+    .car-size-row {
+        flex-wrap: wrap !important;
+    }
+}
+
+@media screen and (max-width: 1403px) {
+    .card-font-heading {
+        font-size: 20px !important;
+        margin-bottom: 20px;
+        padding-left: 14px;
+    }
+
+    .pricing-card {
+        min-height: 200px;
+    }
+
+    .car-size-card {
+        min-height: 270px;
+    }
+
+    .card-font-heading-film {
+        font-size: 20px;
+    }
+
+    .info-card {
+        font-size: 14px;
+    }
+
+    .price-message {
+        font-size: 12px;
+    }
+}
+
+/*.owl-dot {
+    margin: 10px 10px;
+    color: #212923;
+    border: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    transition: 400ms cubic-bezier(0.75, 0.25, 0, 1);
+
+    &.active {
+        background-color: #90f1af;
+    }
+}
+
+.no-js .owl-carousell,
+.owl-carousell.owl-loaded {
+    display: block;
+}
+
+.owl-carousell {
+    display: none;
+    width: 100%;
+    z-index: 1;
+}
+
+.owl-carousell,
+.owl-carousell .owl-item {
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+}
+
+.owl-carousell .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+.owl-carousell .owl-stage {
+    position: relative;
+    -ms-touch-action: pan-Y;
+    touch-action: manipulation;
+    -moz-backface-visibility: hidden;
+}*/
