@@ -142,17 +142,6 @@ h2 {
 .contact-info {
     padding: 50px 0;
 
-    .first-image {
-        background: url('../img/gallery/ambient1.jpg');
-        background-position: center center;
-        background-size: cover;
-    }
-
-    .second-image {
-        background: url('../img/gallery/ambient2.jpg');
-        background-position: center center;
-        background-size: cover;
-    }
 
     .contact-pane {
         padding: 45px 20px;
@@ -559,7 +548,6 @@ p {
 .pricing-heading {
     font-size: 3em !important;
     margin-bottom: 20px;
-    padding-left: 14px;
 }
 
 .desktop {
@@ -577,12 +565,22 @@ p {
     }
 }
 
+.restart-large {
+    float: right;
+}
+
+.restart-small {
+    display: none;
+}
+
 @media screen and (max-width: 1403px) {
     .card-font-heading {
-        font-size: 20px !important;
+        font-size: 17px !important;
         margin-bottom: 20px;
         padding-left: 14px;
     }
+
+
 
     .pricing-card {
         min-height: 200px;
@@ -602,6 +600,16 @@ p {
 
     .price-message {
         font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1094px) {
+    .restart-large {
+        display: none;
+    }
+
+    .restart-small {
+        display: block;
     }
 }
 

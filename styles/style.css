@@ -101,14 +101,6 @@ h2 {
 
 .contact-info {
   padding: 50px 0; }
-  .contact-info .first-image {
-    background: url("../img/gallery/ambient1.jpg");
-    background-position: center center;
-    background-size: cover; }
-  .contact-info .second-image {
-    background: url("../img/gallery/ambient2.jpg");
-    background-position: center center;
-    background-size: cover; }
   .contact-info .contact-pane {
     padding: 45px 20px; }
 
@@ -432,8 +424,7 @@ p {
     opacity: 1; } }
 .pricing-heading {
   font-size: 3em !important;
-  margin-bottom: 20px;
-  padding-left: 14px; }
+  margin-bottom: 20px; }
 
 .desktop {
   display: block; }
@@ -444,9 +435,15 @@ p {
 @media screen and (max-width: 1701px) {
   .car-size-row {
     flex-wrap: wrap !important; } }
+.restart-large {
+  float: right; }
+
+.restart-small {
+  display: none; }
+
 @media screen and (max-width: 1403px) {
   .card-font-heading {
-    font-size: 20px !important;
+    font-size: 17px !important;
     margin-bottom: 20px;
     padding-left: 14px; }
 
@@ -464,6 +461,12 @@ p {
 
   .price-message {
     font-size: 12px; } }
+@media screen and (max-width: 1094px) {
+  .restart-large {
+    display: none; }
+
+  .restart-small {
+    display: block; } }
 /*.owl-dot {
     margin: 10px 10px;
     color: #212923;
