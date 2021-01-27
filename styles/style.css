@@ -371,7 +371,7 @@ p {
   width: 100%;
   min-height: 400px;
   padding: 5px 55px;
-  margin: 25px 25px;
+  height: 100%;
   box-shadow: rgba(74, 48, 208, 0.1) 0px 0px 40px -10px; }
 
 .card-font-heading-film {
