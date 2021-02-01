@@ -32,10 +32,13 @@ h2 {
   text-transform: uppercase;
   font-size: 14px !important;
   padding: 20px 35px !important;
-  background-color: #4A30D0 !important;
+  background-color: #0D0D0D !important;
   display: flex;
   align-items: center;
   justify-content: center; }
+
+.btn-primary:focus {
+  box-shadow: none !important; }
 
 .btn-secondary {
   font-family: 'Poppins' !important;
@@ -61,7 +64,7 @@ h2 {
   color: #9BA0A3 !important; }
 
 .thumbnail {
-  background-color: #4A30D0;
+  background-color: #0D0D0D;
   padding-bottom: 1px;
   transform: translateY(50%); }
 
@@ -81,7 +84,7 @@ h2 {
   justify-content: center; }
   .icon-badge.check {
     padding: 6px;
-    background-color: #4A30D0 !important; }
+    background-color: #0D0D0D !important; }
 
 .dot-points {
   display: block; }
@@ -153,7 +156,7 @@ h2 {
       color: white !important; }
 
 .footer {
-  background-color: #4A30D0;
+  background-color: #0D0D0D;
   padding: 150px 0 125px; }
 
 .social-btn {
@@ -411,11 +414,11 @@ p {
 .tinting-options,
 .removal-options {
   display: none; }
-
-.active {
-  display: block;
-  transition: 200ms;
-  animation: fade-in 1000ms; }
+  .tinting-options.active,
+  .removal-options.active {
+    display: block;
+    transition: 200ms;
+    animation: fade-in 1000ms; }
 
 @keyframes fade-in {
   0% {

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
 
-$blue: #4A30D0;
+$blue: #0D0D0D;
 $blue-opacity: 0.5;
 $grey: #323638;
 $light-grey: #9BA0A3;
@@ -55,6 +55,10 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.btn-primary:focus {
+    box-shadow: none !important;
 }
 
 .btn-secondary {
@@ -527,12 +531,12 @@ p {
 .tinting-options,
 .removal-options {
     display: none;
-}
 
-.active {
-    display: block;
-    transition: 200ms;
-    animation: fade-in 1000ms;
+    &.active {
+        display: block;
+        transition: 200ms;
+        animation: fade-in 1000ms;
+    }
 }
 
 @keyframes fade-in {
