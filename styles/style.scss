@@ -214,7 +214,7 @@ h2 {
 }
 
 .footer {
-    background-color: $blue;
+    background-color: #5E5E5E;
     padding: 150px 0 125px;
 }
 
@@ -349,7 +349,7 @@ p {
     position: absolute;
     bottom: 0px;
     left: 0px;
-    background-color: #4A30D0;
+    background-color: #0D0D0D;
     min-width: 100%;
     height: 30%;
     z-index: 3;
@@ -369,7 +369,7 @@ p {
 }
 
 .card-color-size {
-    background-color: #4A30D0;
+    background-color: #0D0D0D;
     position: relative;
     padding: 0 25px;
     margin: 0 25px;
@@ -381,7 +381,7 @@ p {
 
 .car-size-card:hover .card-color-size {
     height: 100%;
-    position: absolute;
+    //position: absolute;
 }
 
 .car-size-card:hover .car-icons {
@@ -459,7 +459,7 @@ p {
     text-transform: uppercase;
     font-size: 14px !important;
     padding: 20px 35px !important;
-    background-color: #6c57d1 !important;
+    background-color: #0D0D0D !important;
     display: flex;
     align-items: center;
     color: white !important;
@@ -469,7 +469,7 @@ p {
 }
 
 .btn-pricing:hover {
-    background-color: #4A30D0 !important;
+    background-color: #0D0D0D !important;
     color: white !important;
 }
 

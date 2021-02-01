@@ -156,7 +156,7 @@ h2 {
       color: white !important; }
 
 .footer {
-  background-color: #0D0D0D;
+  background-color: #5E5E5E;
   padding: 150px 0 125px; }
 
 .social-btn {
@@ -259,7 +259,7 @@ p {
   position: absolute;
   bottom: 0px;
   left: 0px;
-  background-color: #4A30D0;
+  background-color: #0D0D0D;
   min-width: 100%;
   height: 30%;
   z-index: 3;
@@ -277,7 +277,7 @@ p {
   box-shadow: rgba(74, 48, 208, 0.1) 0px 0px 40px -10px; }
 
 .card-color-size {
-  background-color: #4A30D0;
+  background-color: #0D0D0D;
   position: relative;
   padding: 0 25px;
   margin: 0 25px;
@@ -287,8 +287,7 @@ p {
   transition: 400ms; }
 
 .car-size-card:hover .card-color-size {
-  height: 100%;
-  position: absolute; }
+  height: 100%; }
 
 .car-size-card:hover .car-icons {
   filter: invert(100%); }
@@ -352,7 +351,7 @@ p {
   text-transform: uppercase;
   font-size: 14px !important;
   padding: 20px 35px !important;
-  background-color: #6c57d1 !important;
+  background-color: #0D0D0D !important;
   display: flex;
   align-items: center;
   color: white !important;
@@ -361,7 +360,7 @@ p {
   margin-bottom: 12px !important; }
 
 .btn-pricing:hover {
-  background-color: #4A30D0 !important;
+  background-color: #0D0D0D !important;
   color: white !important; }
 
 .film-size-card {
