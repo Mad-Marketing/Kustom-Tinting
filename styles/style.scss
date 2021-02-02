@@ -3,11 +3,11 @@
 $blue: #0D0D0D;
 $blue-opacity: 0.5;
 $grey: #323638;
-$light-grey: #9BA0A3;
+$light-grey: #5E5E5E;
 $light-blue: #7156ff;
 
 body {
-    background-color: white;
+    background-color: #EFEFEF;
 }
 
 * {
@@ -33,14 +33,14 @@ h2 {
     .caption {
 
         h1 {
-            color: white;
+            color: #EFEFEF;
             font-size: 4vw;
             line-height: 1em;
             margin-bottom: 48px;
         }
 
         p {
-            color: white;
+            color: #EFEFEF;
         }
     }
 }
@@ -67,7 +67,7 @@ h2 {
     text-transform: uppercase;
     font-size: 14px !important;
     padding: 20px 35px !important;
-    background-color: white !important;
+    background-color: #EFEFEF !important;
     color: $grey !important;
     display: flex;
     align-items: center;
@@ -77,7 +77,7 @@ h2 {
 .nav-btn {
     font-size: 16px;
     font-weight: 700;
-    color: white !important;
+    color: #EFEFEF !important;
 }
 
 .badge-kustom {
@@ -95,7 +95,7 @@ h2 {
 }
 
 .text-btn {
-    color: white;
+    color: #EFEFEF;
     display: flex;
     align-items: center;
     padding: 0 25px;
@@ -125,7 +125,7 @@ h2 {
         align-items: center;
 
         .icon-badge {
-            color: white;
+            color: #EFEFEF;
         }
     }
 }
@@ -146,7 +146,6 @@ h2 {
 .contact-info {
     padding: 50px 0;
 
-
     .contact-pane {
         padding: 45px 20px;
     }
@@ -164,13 +163,13 @@ h2 {
         flex-direction: row;
         justify-content: center;
         background-size: cover;
-        color: white !important;
+        color: #EFEFEF !important;
 
         h3 {
             text-align: center;
             flex-basis: 100%;
             font-size: 3em;
-            color: white !important;
+            color: #EFEFEF !important;
         }
     }
 
@@ -183,13 +182,13 @@ h2 {
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/gallery/8.jpg');
         background-position: center center;
         background-size: cover;
-        color: white !important;
+        color: #EFEFEF !important;
 
         h3 {
             text-align: center;
             flex-basis: 100%;
             font-size: 3em;
-            color: white !important;
+            color: #EFEFEF !important;
         }
     }
 
@@ -202,13 +201,13 @@ h2 {
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/gallery/commercial.jpg');
         background-position: center center;
         background-size: cover;
-        color: white !important;
+        color: #EFEFEF !important;
 
         h3 {
             text-align: center;
             flex-basis: 100%;
             font-size: 3em;
-            color: white !important;
+            color: #EFEFEF !important;
         }
     }
 }
@@ -326,6 +325,7 @@ h2 {
     justify-content: space-between;
     position: relative;
     width: 100%;
+    cursor: pointer;
     min-height: 300px;
     z-index: 4;
     margin: 25px 25px;
@@ -342,7 +342,7 @@ p {
 }
 
 .pricing-card:hover p {
-    color: white;
+    color: #EFEFEF;
 }
 
 .card-color {
@@ -362,6 +362,7 @@ p {
     align-items: center;
     justify-content: flex-end;
     position: relative;
+    cursor: pointer;
     width: 100%;
     min-height: 300px;
     margin: 25px 25px;
@@ -394,7 +395,7 @@ p {
 }
 
 .card-font-heading-car {
-    color: white;
+    color: #EFEFEF !important;
     font-size: 24px;
     z-index: 4;
     position: absolute;
@@ -412,7 +413,7 @@ p {
 
 .estimated-price {
     z-index: 4;
-    color: white;
+    color: #EFEFEF !important;
     position: absolute;
     bottom: 0px;
 }
@@ -462,7 +463,7 @@ p {
     background-color: #0D0D0D !important;
     display: flex;
     align-items: center;
-    color: white !important;
+    color: #EFEFEF !important;
     letter-spacing: 2px !important;
     justify-content: center;
     margin-bottom: 12px !important;
@@ -470,7 +471,7 @@ p {
 
 .btn-pricing:hover {
     background-color: #0D0D0D !important;
-    color: white !important;
+    color: #EFEFEF !important;
 }
 
 .film-size-card {
@@ -488,7 +489,7 @@ p {
 }
 
 .card-font-heading-film {
-    color: #3C4144;
+    color: #EFEFEF;
     font-size: 38px;
     text-align: center;
     line-height: 47px;
@@ -509,7 +510,7 @@ p {
 }
 
 .info-card {
-    color: #9BA0A3;
+    color: #5E5E5E;
 }
 
 .est {
@@ -522,7 +523,7 @@ p {
 }
 
 .price-message {
-    color: #9BA0A3;
+    color: #5E5E5E;
     font-size: 14px;
     margin: 0 0;
 }
@@ -562,7 +563,12 @@ p {
     display: none;
 }
 
-
+.new-colors {
+    color: #5E5E5E;
+}
+.new-colors p {
+    color: #5E5E5E;
+}
 @media screen and (max-width: 1701px) {
     .car-size-row {
         flex-wrap: wrap !important;
@@ -570,8 +576,8 @@ p {
 }
 
 .restart {
-    color: #9BA0A3 !important;
-    background-color: white !important;
+    color: #5E5E5E !important;
+    background-color: #EFEFEF !important;
     box-shadow: rgba(74, 48, 208, .1) 0px 0px 40px -10px !important;
 }
 
@@ -622,47 +628,3 @@ p {
         display: block;
     }
 }
-
-/*.owl-dot {
-    margin: 10px 10px;
-    color: #212923;
-    border: none;
-    width: 12px;
-    height: 12px;
-    border-radius: 100%;
-    transition: 400ms cubic-bezier(0.75, 0.25, 0, 1);
-
-    &.active {
-        background-color: #90f1af;
-    }
-}
-
-.no-js .owl-carousell,
-.owl-carousell.owl-loaded {
-    display: block;
-}
-
-.owl-carousell {
-    display: none;
-    width: 100%;
-    z-index: 1;
-}
-
-.owl-carousell,
-.owl-carousell .owl-item {
-    -webkit-tap-highlight-color: transparent;
-    position: relative;
-}
-
-.owl-carousell .owl-stage-outer {
-    position: relative;
-    overflow: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-}
-
-.owl-carousell .owl-stage {
-    position: relative;
-    -ms-touch-action: pan-Y;
-    touch-action: manipulation;
-    -moz-backface-visibility: hidden;
-}*/
