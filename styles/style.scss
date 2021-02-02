@@ -58,7 +58,7 @@ h2 {
 }
 
 .btn-primary:focus {
-    box-shadow: none !important;
+    box-shadow: 0 0 0 3px rgba(94, 94, 94, 0.5) !important;
 }
 
 .btn-secondary {
@@ -125,7 +125,7 @@ h2 {
         align-items: center;
 
         .icon-badge {
-            color: #EFEFEF;
+            color: white;
         }
     }
 }
@@ -150,6 +150,13 @@ h2 {
         padding: 45px 20px;
     }
 }
+.owl-dot span{
+    background: #5E5E5E !important;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #0D0D0D !important;
+}
+
 
 .services {
     transform: translateY(30%);
