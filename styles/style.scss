@@ -61,10 +61,11 @@ h2 {
 }
 
 .btn-primary:hover {
-    background-color: #1d1d1d !important;
+    background-color: lighten($color: #1d1d1d, $amount: 2%) !important;
 }
-.btn-primary:focus {
+.btn-primary:active {
     box-shadow: 0 0 0 3px rgba(13, 13, 13, 0.5) !important;
+    background-color: lighten($color: #1d1d1d, $amount: 10%) !important;
     border: 0px solid #5E5E5E !important;
 }
 
@@ -74,13 +75,19 @@ h2 {
     text-transform: uppercase;
     font-size: 14px !important;
     padding: 20px 35px !important;
+    transition: 200ms;
     background-color: #EFEFEF !important;
     color: $grey !important;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
+.btn-secondary:hover {
+    background-color: darken($color: #efefef, $amount: 10%) !important;
+}
+.btn-secondary:active {
+    background-color: darken($color: #efefef, $amount: 20%) !important;
+}
 .nav-btn {
     font-size: 16px;
     font-weight: 700;
