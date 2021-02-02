@@ -32,13 +32,16 @@ h2 {
   text-transform: uppercase;
   font-size: 14px !important;
   padding: 20px 35px !important;
+  border: 0px solid #5E5E5E !important;
+  box-shadow: 0 0 0 rgba(13, 13, 13, 0.5) !important;
   background-color: #0D0D0D !important;
   display: flex;
   align-items: center;
   justify-content: center; }
 
 .btn-primary:focus {
-  box-shadow: 0 0 0 3px rgba(94, 94, 94, 0.5) !important; }
+  box-shadow: 0 0 0 3px rgba(13, 13, 13, 0.5) !important;
+  border: 0px solid #5E5E5E !important; }
 
 .btn-secondary {
   font-family: 'Poppins' !important;
