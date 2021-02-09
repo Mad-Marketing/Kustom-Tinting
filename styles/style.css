@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap");
 body {
-  background-color: white; }
+  background-color: #EFEFEF; }
 
 * {
   font-family: 'Cabin', sans-serif !important; }
@@ -19,12 +19,12 @@ h2 {
   background-size: cover;
   background-position: center center; }
   .header .caption h1 {
-    color: white;
+    color: #EFEFEF;
     font-size: 4vw;
     line-height: 1em;
     margin-bottom: 48px; }
   .header .caption p {
-    color: white; }
+    color: #EFEFEF; }
 
 .btn-primary {
   font-family: 'Poppins' !important;
@@ -32,10 +32,21 @@ h2 {
   text-transform: uppercase;
   font-size: 14px !important;
   padding: 20px 35px !important;
-  background-color: #4A30D0 !important;
+  border: 0px solid #5E5E5E !important;
+  box-shadow: 0 0 0 rgba(13, 13, 13, 0.5) !important;
+  background-color: #0D0D0D !important;
   display: flex;
+  transition: 200ms;
   align-items: center;
   justify-content: center; }
+
+.btn-primary:hover {
+  background-color: #222222 !important; }
+
+.btn-primary:active {
+  box-shadow: 0 0 0 3px rgba(13, 13, 13, 0.5) !important;
+  background-color: #373737 !important;
+  border: 0px solid #5E5E5E !important; }
 
 .btn-secondary {
   font-family: 'Poppins' !important;
@@ -43,30 +54,37 @@ h2 {
   text-transform: uppercase;
   font-size: 14px !important;
   padding: 20px 35px !important;
-  background-color: white !important;
+  transition: 200ms;
+  background-color: #EFEFEF !important;
   color: #323638 !important;
   display: flex;
   align-items: center;
   justify-content: center; }
 
+.btn-secondary:hover {
+  background-color: #d6d6d6 !important; }
+
+.btn-secondary:active {
+  background-color: #bcbcbc !important; }
+
 .nav-btn {
   font-size: 16px;
   font-weight: 700;
-  color: white !important; }
+  color: #EFEFEF !important; }
 
 .badge-kustom {
   letter-spacing: 5px;
   font-weight: 900 !important;
   font-size: 14px !important;
-  color: #9BA0A3 !important; }
+  color: #5E5E5E !important; }
 
 .thumbnail {
-  background-color: #4A30D0;
+  background-color: #0D0D0D;
   padding-bottom: 1px;
   transform: translateY(50%); }
 
 .text-btn {
-  color: white;
+  color: #EFEFEF;
   display: flex;
   align-items: center;
   padding: 0 25px; }
@@ -74,14 +92,14 @@ h2 {
 .icon-badge {
   display: flex;
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: #0D0D0D;
   margin-right: 25px;
   border-radius: 100px;
   align-items: center;
   justify-content: center; }
   .icon-badge.check {
     padding: 6px;
-    background-color: #4A30D0 !important; }
+    background-color: #0D0D0D !important; }
 
 .dot-points {
   display: block; }
@@ -101,16 +119,14 @@ h2 {
 
 .contact-info {
   padding: 50px 0; }
-  .contact-info .first-image {
-    background: url("../img/gallery/ambient1.jpg");
-    background-position: center center;
-    background-size: cover; }
-  .contact-info .second-image {
-    background: url("../img/gallery/ambient2.jpg");
-    background-position: center center;
-    background-size: cover; }
   .contact-info .contact-pane {
     padding: 45px 20px; }
+
+.owl-dot span {
+  background: #5E5E5E !important; }
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #0D0D0D !important; }
 
 .services {
   transform: translateY(30%); }
@@ -123,12 +139,12 @@ h2 {
     flex-direction: row;
     justify-content: center;
     background-size: cover;
-    color: white !important; }
+    color: #EFEFEF !important; }
     .services .cars h3 {
       text-align: center;
       flex-basis: 100%;
       font-size: 3em;
-      color: white !important; }
+      color: #EFEFEF !important; }
   .services .houses {
     padding: 50px;
     display: flex;
@@ -138,12 +154,12 @@ h2 {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/gallery/8.jpg");
     background-position: center center;
     background-size: cover;
-    color: white !important; }
+    color: #EFEFEF !important; }
     .services .houses h3 {
       text-align: center;
       flex-basis: 100%;
       font-size: 3em;
-      color: white !important; }
+      color: #EFEFEF !important; }
   .services .commercial {
     padding: 50px;
     display: flex;
@@ -153,15 +169,15 @@ h2 {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/gallery/commercial.jpg");
     background-position: center center;
     background-size: cover;
-    color: white !important; }
+    color: #EFEFEF !important; }
     .services .commercial h3 {
       text-align: center;
       flex-basis: 100%;
       font-size: 3em;
-      color: white !important; }
+      color: #EFEFEF !important; }
 
 .footer {
-  background-color: #4A30D0;
+  background-color: #5E5E5E;
   padding: 150px 0 125px; }
 
 .social-btn {
@@ -169,10 +185,14 @@ h2 {
   display: inline-flex;
   width: 42px;
   height: 42px;
+  background-color: #0D0D0D !important;
   min-width: 0 !important;
   align-items: center;
   justify-content: center;
   border-radius: 32px !important; }
+
+.social-btn:hover {
+  background-color: #1d1d1d !important; }
 
 .heroo-btn {
   display: flex;
@@ -218,7 +238,7 @@ h2 {
     align-items: center;
     justify-content: center; }
 
-  .kustom-badge {
+  .kustom-badgee {
     display: none !important; }
 
   .state {
@@ -238,5 +258,257 @@ h2 {
 @media screen and (max-width: 1351px) {
   .thumbnail {
     transform: translateY(0) !important; } }
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+  min-height: 300px;
+  z-index: 4;
+  margin: 25px 25px;
+  padding: 25px 25px;
+  box-shadow: rgba(13, 13, 13, 0.1) 0px 0px 40px -10px; }
+
+.pricing-card:hover .card-color {
+  height: 100%; }
+
+p {
+  transition: 300ms; }
+
+.pricing-card:hover p {
+  color: #EFEFEF; }
+
+.card-color {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: #0D0D0D;
+  min-width: 100%;
+  height: 30%;
+  z-index: 3;
+  transition: 400ms; }
+
+.car-size-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  min-height: 300px;
+  margin: 25px 25px;
+  box-shadow: rgba(13, 13, 13, 0.1) 0px 0px 40px -10px; }
+
+.card-color-size {
+  background-color: #0D0D0D;
+  position: relative;
+  padding: 0 25px;
+  margin: 0 25px;
+  min-width: 100%;
+  height: 30%;
+  z-index: 3;
+  transition: 400ms; }
+
+.car-size-card:hover .card-color-size {
+  height: 100%; }
+
+.car-size-card:hover .car-icons {
+  filter: invert(100%); }
+
+.card-font-heading {
+  font-size: 24px;
+  z-index: 4; }
+
+.card-font-heading-car {
+  color: #EFEFEF !important;
+  font-size: 24px;
+  z-index: 4;
+  position: absolute;
+  bottom: 18px; }
+
+.car-size-card:hover .card-font-heading-car {
+  position: absolute;
+  bottom: 18px; }
+
+.selection {
+  font-size: 14px; }
+
+.estimated-price {
+  z-index: 4;
+  color: #EFEFEF !important;
+  position: absolute;
+  bottom: 0px; }
+
+.car-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  width: 400px;
+  min-height: 400px;
+  padding: 25px 25px; }
+
+.car-icons {
+  width: 84px;
+  height: 84px;
+  z-index: 4;
+  position: absolute;
+  top: 95px;
+  transition: 300ms; }
+
+.car-icons-film {
+  width: 84px;
+  height: 84px;
+  z-index: 4;
+  position: absolute;
+  top: -45px; }
+
+.car-size-row {
+  flex-wrap: nowrap !important;
+  justify-content: center; }
+
+.btn-pricing {
+  font-family: 'Poppins' !important;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 14px !important;
+  padding: 20px 35px !important;
+  background-color: #0D0D0D !important;
+  display: flex;
+  align-items: center;
+  color: #EFEFEF !important;
+  letter-spacing: 2px !important;
+  justify-content: center;
+  margin-bottom: 12px !important; }
+
+.btn-pricing:hover {
+  background-color: #0D0D0D !important;
+  color: #EFEFEF !important; }
+
+.film-size-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  padding: 5px 55px;
+  height: 100%;
+  box-shadow: rgba(13, 13, 13, 0.1) 0px 0px 40px -10px; }
+
+.card-font-heading-film {
+  color: #EFEFEF;
+  font-size: 38px;
+  text-align: center;
+  line-height: 47px;
+  z-index: 4;
+  margin-bottom: 0px; }
+
+.total-price,
+.removal-text {
+  font-size: 48px; }
+
+.final-price-tile {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end; }
+
+.info-card {
+  color: #5E5E5E; }
+
+.est {
+  color: #3C4144;
+  font-size: 14px;
+  line-height: 0px;
+  z-index: 4;
+  margin-bottom: 0px;
+  text-align: center; }
+
+.price-message {
+  color: #5E5E5E;
+  font-size: 14px;
+  margin: 0 0; }
+
+.tinting-options,
+.removal-options {
+  display: none; }
+  .tinting-options.active,
+  .removal-options.active {
+    display: block;
+    transition: 200ms;
+    animation: fade-in 1000ms; }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.pricing-heading {
+  font-size: 3em !important;
+  margin-bottom: 20px; }
+
+.desktop {
+  display: block; }
+
+.mobile {
+  display: none; }
+
+.new-colors {
+  color: #5E5E5E; }
+
+.new-colors p {
+  color: #5E5E5E; }
+
+@media screen and (max-width: 1701px) {
+  .car-size-row {
+    flex-wrap: wrap !important; } }
+.restart {
+  color: #5E5E5E !important;
+  background-color: #EFEFEF !important;
+  box-shadow: rgba(13, 13, 13, 0.1) 0px 0px 40px -10px !important; }
+
+.restart:hover {
+  background-color: #e4e4e4 !important; }
+
+.restart-large {
+  float: right; }
+
+.restart-small {
+  display: none; }
+
+@media screen and (max-width: 1403px) {
+  .card-font-heading {
+    font-size: 17px !important;
+    margin-bottom: 20px;
+    padding-left: 14px; }
+
+  .pricing-card {
+    min-height: 200px; }
+
+  .car-size-card {
+    min-height: 270px; }
+
+  .card-font-heading-film {
+    font-size: 20px; }
+
+  .info-card {
+    font-size: 14px; }
+
+  .price-message {
+    font-size: 12px; } }
+@media screen and (max-width: 1094px) {
+  .restart-large {
+    display: none; }
+
+  .restart-small {
+    display: block; } }
 
 /*# sourceMappingURL=style.css.map */
