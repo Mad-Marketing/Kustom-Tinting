@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap");
 body {
-  background-color: white; }
+  background-color: #EFEFEF; }
 
 * {
   font-family: 'Cabin', sans-serif !important; }
@@ -19,12 +19,12 @@ h2 {
   background-size: cover;
   background-position: center center; }
   .header .caption h1 {
-    color: white;
+    color: #EFEFEF;
     font-size: 4vw;
     line-height: 1em;
     margin-bottom: 48px; }
   .header .caption p {
-    color: white; }
+    color: #EFEFEF; }
 
 .btn-primary {
   font-family: 'Poppins' !important;
@@ -32,13 +32,21 @@ h2 {
   text-transform: uppercase;
   font-size: 14px !important;
   padding: 20px 35px !important;
+  border: 0px solid #5E5E5E !important;
+  box-shadow: 0 0 0 rgba(13, 13, 13, 0.5) !important;
   background-color: #0D0D0D !important;
   display: flex;
+  transition: 200ms;
   align-items: center;
   justify-content: center; }
 
-.btn-primary:focus {
-  box-shadow: none !important; }
+.btn-primary:hover {
+  background-color: #222222 !important; }
+
+.btn-primary:active {
+  box-shadow: 0 0 0 3px rgba(13, 13, 13, 0.5) !important;
+  background-color: #373737 !important;
+  border: 0px solid #5E5E5E !important; }
 
 .btn-secondary {
   font-family: 'Poppins' !important;
@@ -46,22 +54,29 @@ h2 {
   text-transform: uppercase;
   font-size: 14px !important;
   padding: 20px 35px !important;
-  background-color: white !important;
+  transition: 200ms;
+  background-color: #EFEFEF !important;
   color: #323638 !important;
   display: flex;
   align-items: center;
   justify-content: center; }
 
+.btn-secondary:hover {
+  background-color: #d6d6d6 !important; }
+
+.btn-secondary:active {
+  background-color: #bcbcbc !important; }
+
 .nav-btn {
   font-size: 16px;
   font-weight: 700;
-  color: white !important; }
+  color: #EFEFEF !important; }
 
 .badge-kustom {
   letter-spacing: 5px;
   font-weight: 900 !important;
   font-size: 14px !important;
-  color: #9BA0A3 !important; }
+  color: #5E5E5E !important; }
 
 .thumbnail {
   background-color: #0D0D0D;
@@ -69,7 +84,7 @@ h2 {
   transform: translateY(50%); }
 
 .text-btn {
-  color: white;
+  color: #EFEFEF;
   display: flex;
   align-items: center;
   padding: 0 25px; }
@@ -77,7 +92,7 @@ h2 {
 .icon-badge {
   display: flex;
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: #0D0D0D;
   margin-right: 25px;
   border-radius: 100px;
   align-items: center;
@@ -107,6 +122,12 @@ h2 {
   .contact-info .contact-pane {
     padding: 45px 20px; }
 
+.owl-dot span {
+  background: #5E5E5E !important; }
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #0D0D0D !important; }
+
 .services {
   transform: translateY(30%); }
   .services .cars {
@@ -118,12 +139,12 @@ h2 {
     flex-direction: row;
     justify-content: center;
     background-size: cover;
-    color: white !important; }
+    color: #EFEFEF !important; }
     .services .cars h3 {
       text-align: center;
       flex-basis: 100%;
       font-size: 3em;
-      color: white !important; }
+      color: #EFEFEF !important; }
   .services .houses {
     padding: 50px;
     display: flex;
@@ -133,12 +154,12 @@ h2 {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/gallery/8.jpg");
     background-position: center center;
     background-size: cover;
-    color: white !important; }
+    color: #EFEFEF !important; }
     .services .houses h3 {
       text-align: center;
       flex-basis: 100%;
       font-size: 3em;
-      color: white !important; }
+      color: #EFEFEF !important; }
   .services .commercial {
     padding: 50px;
     display: flex;
@@ -148,15 +169,15 @@ h2 {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/gallery/commercial.jpg");
     background-position: center center;
     background-size: cover;
-    color: white !important; }
+    color: #EFEFEF !important; }
     .services .commercial h3 {
       text-align: center;
       flex-basis: 100%;
       font-size: 3em;
-      color: white !important; }
+      color: #EFEFEF !important; }
 
 .footer {
-  background-color: #0D0D0D;
+  background-color: #5E5E5E;
   padding: 150px 0 125px; }
 
 .social-btn {
@@ -164,10 +185,14 @@ h2 {
   display: inline-flex;
   width: 42px;
   height: 42px;
+  background-color: #0D0D0D !important;
   min-width: 0 !important;
   align-items: center;
   justify-content: center;
   border-radius: 32px !important; }
+
+.social-btn:hover {
+  background-color: #1d1d1d !important; }
 
 .heroo-btn {
   display: flex;
@@ -240,11 +265,12 @@ h2 {
   justify-content: space-between;
   position: relative;
   width: 100%;
+  cursor: pointer;
   min-height: 300px;
   z-index: 4;
   margin: 25px 25px;
   padding: 25px 25px;
-  box-shadow: rgba(74, 48, 208, 0.1) 0px 0px 40px -10px; }
+  box-shadow: rgba(13, 13, 13, 0.1) 0px 0px 40px -10px; }
 
 .pricing-card:hover .card-color {
   height: 100%; }
@@ -253,13 +279,13 @@ p {
   transition: 300ms; }
 
 .pricing-card:hover p {
-  color: white; }
+  color: #EFEFEF; }
 
 .card-color {
   position: absolute;
   bottom: 0px;
   left: 0px;
-  background-color: #4A30D0;
+  background-color: #0D0D0D;
   min-width: 100%;
   height: 30%;
   z-index: 3;
@@ -271,13 +297,14 @@ p {
   align-items: center;
   justify-content: flex-end;
   position: relative;
+  cursor: pointer;
   width: 100%;
   min-height: 300px;
   margin: 25px 25px;
-  box-shadow: rgba(74, 48, 208, 0.1) 0px 0px 40px -10px; }
+  box-shadow: rgba(13, 13, 13, 0.1) 0px 0px 40px -10px; }
 
 .card-color-size {
-  background-color: #4A30D0;
+  background-color: #0D0D0D;
   position: relative;
   padding: 0 25px;
   margin: 0 25px;
@@ -287,8 +314,7 @@ p {
   transition: 400ms; }
 
 .car-size-card:hover .card-color-size {
-  height: 100%;
-  position: absolute; }
+  height: 100%; }
 
 .car-size-card:hover .car-icons {
   filter: invert(100%); }
@@ -298,7 +324,7 @@ p {
   z-index: 4; }
 
 .card-font-heading-car {
-  color: white;
+  color: #EFEFEF !important;
   font-size: 24px;
   z-index: 4;
   position: absolute;
@@ -313,7 +339,7 @@ p {
 
 .estimated-price {
   z-index: 4;
-  color: white;
+  color: #EFEFEF !important;
   position: absolute;
   bottom: 0px; }
 
@@ -352,17 +378,17 @@ p {
   text-transform: uppercase;
   font-size: 14px !important;
   padding: 20px 35px !important;
-  background-color: #6c57d1 !important;
+  background-color: #0D0D0D !important;
   display: flex;
   align-items: center;
-  color: white !important;
+  color: #EFEFEF !important;
   letter-spacing: 2px !important;
   justify-content: center;
   margin-bottom: 12px !important; }
 
 .btn-pricing:hover {
-  background-color: #4A30D0 !important;
-  color: white !important; }
+  background-color: #0D0D0D !important;
+  color: #EFEFEF !important; }
 
 .film-size-card {
   display: flex;
@@ -375,10 +401,10 @@ p {
   min-height: 400px;
   padding: 5px 55px;
   height: 100%;
-  box-shadow: rgba(74, 48, 208, 0.1) 0px 0px 40px -10px; }
+  box-shadow: rgba(13, 13, 13, 0.1) 0px 0px 40px -10px; }
 
 .card-font-heading-film {
-  color: #3C4144;
+  color: #EFEFEF;
   font-size: 38px;
   text-align: center;
   line-height: 47px;
@@ -396,7 +422,7 @@ p {
   justify-content: flex-end; }
 
 .info-card {
-  color: #9BA0A3; }
+  color: #5E5E5E; }
 
 .est {
   color: #3C4144;
@@ -407,7 +433,7 @@ p {
   text-align: center; }
 
 .price-message {
-  color: #9BA0A3;
+  color: #5E5E5E;
   font-size: 14px;
   margin: 0 0; }
 
@@ -435,13 +461,22 @@ p {
 .mobile {
   display: none; }
 
+.new-colors {
+  color: #5E5E5E; }
+
+.new-colors p {
+  color: #5E5E5E; }
+
 @media screen and (max-width: 1701px) {
   .car-size-row {
     flex-wrap: wrap !important; } }
 .restart {
-  color: #9BA0A3 !important;
-  background-color: white !important;
-  box-shadow: rgba(74, 48, 208, 0.1) 0px 0px 40px -10px !important; }
+  color: #5E5E5E !important;
+  background-color: #EFEFEF !important;
+  box-shadow: rgba(13, 13, 13, 0.1) 0px 0px 40px -10px !important; }
+
+.restart:hover {
+  background-color: #e4e4e4 !important; }
 
 .restart-large {
   float: right; }
@@ -475,48 +510,5 @@ p {
 
   .restart-small {
     display: block; } }
-/*.owl-dot {
-    margin: 10px 10px;
-    color: #212923;
-    border: none;
-    width: 12px;
-    height: 12px;
-    border-radius: 100%;
-    transition: 400ms cubic-bezier(0.75, 0.25, 0, 1);
-
-    &.active {
-        background-color: #90f1af;
-    }
-}
-
-.no-js .owl-carousell,
-.owl-carousell.owl-loaded {
-    display: block;
-}
-
-.owl-carousell {
-    display: none;
-    width: 100%;
-    z-index: 1;
-}
-
-.owl-carousell,
-.owl-carousell .owl-item {
-    -webkit-tap-highlight-color: transparent;
-    position: relative;
-}
-
-.owl-carousell .owl-stage-outer {
-    position: relative;
-    overflow: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-}
-
-.owl-carousell .owl-stage {
-    position: relative;
-    -ms-touch-action: pan-Y;
-    touch-action: manipulation;
-    -moz-backface-visibility: hidden;
-}*/
 
 /*# sourceMappingURL=style.css.map */
